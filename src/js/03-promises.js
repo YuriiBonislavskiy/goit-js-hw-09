@@ -22,7 +22,7 @@ function onFormSubmit(evt) {
   const step = Number(refs.step.value);
   console.log(refs.amount.value);
   let maxDelay = delay + (Number(refs.amount.value) - 1) * step;
-  for (i = 1; i <= Number(refs.amount.value); i += 1) {
+  for (let i = 1; i <= Number(refs.amount.value); i += 1) {
     createPromise(i, delay, maxDelay);
     delay += step;
     maxDelay -= step;
