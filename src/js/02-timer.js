@@ -132,11 +132,12 @@ function timeValidationCheck1(selectedData) {
     //   selectedTime = null;
     return;
   }
-  Notiflix.Notify.success(selectedData.toString(), {
+  Notiflix.Notify.success(`SUCCESS! ${selectedData.toString()}`, {
     timeout: 2000,
   });
   selectedTime = selectedData;
   refs.startBtn.removeAttribute('disabled');
+  console.log(selectedData.toString());
   return;
 }
 
