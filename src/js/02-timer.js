@@ -14,6 +14,7 @@ const refs = {
   remainingSeconds: document.querySelector('span[data-seconds]'),
 };
 
+
 class Timer {
   constructor({
     timeInterval,
